@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - image: myapp/myapp-server
+          name: myapp
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: softwareQuality
+            - name: MYSQL_USER
+              value: user
+            - name: MYSQL_PASSWORD
+              value: sofe3980u
+            - name: MYSQL_DATABASE
+              value: Readings
+          ports:
+            - containerPort: 3306
+              name: myapp
