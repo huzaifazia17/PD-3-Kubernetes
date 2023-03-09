@@ -13,7 +13,7 @@ spec:
         app: bc
     spec:
       containers:
-        - image: gcr.io/starry-being-379922/binarycalculator
+        - image: gcr.io/softwarequalityd1-379918/binarycalculator
           name: bc
           ports:
             - containerPort: 8080
