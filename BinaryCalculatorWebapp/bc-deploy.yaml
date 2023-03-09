@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bc-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bc
+  template:
+    metadata:
+      labels:
+        app: bc
+    spec:
+      containers:
+        - image: gcr.io/starry-being-379922/binarycalculator
+          name: bc
+          ports:
+            - containerPort: 8080
+              name: bc
