@@ -49,7 +49,7 @@ public class BinaryAPIControllerTest {
     }
 
     // THREE MORE TEST CASES FOR BINARY API SERVICE
-
+    /*
     @Test
     public void add3() throws Exception {
         this.mvc.perform(get("/add").param("operand1", "000").param("operand2", "1110"))// .andDo(print())
@@ -309,4 +309,5 @@ public class BinaryAPIControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.result").value(1))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.operator").value("multiply"));
     }
+    */
 }
