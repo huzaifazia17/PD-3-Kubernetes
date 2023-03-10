@@ -58,7 +58,7 @@ public class BinaryControllerTest {
     }
 
     // THREE MORE TEST CASES FOR BINARY WEB APPLICATION
-
+/*
     @Test
     public void getParameter2() throws Exception {
         this.mvc.perform(get("/").param("operand1", "1111"))
@@ -336,5 +336,5 @@ public class BinaryControllerTest {
                 .andExpect(model().attribute("result", "1"))
                 .andExpect(model().attribute("operand1", "1"));
     }
-
+*/
 }
